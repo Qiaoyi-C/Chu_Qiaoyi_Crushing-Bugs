@@ -1,8 +1,9 @@
 # Chu_Qiaoyi_Crushing-Bugs
 This repo is fixes two bugs for Puzzle Drag and Drop.
 
-Bug 1 - Multiple puzzles can be placed in the same drop zone.
-Bug 2 - The drop zones can't reset or choosing a new puzzle.
+**Bug 1** - Multiple puzzles can be placed in the same drop zone.
+
+**Bug 2** - The drop zones can't reset or choosing a new puzzle.
 
 
 ## Installation
