@@ -54,12 +54,11 @@ function handleDrop(e) {
 
 	// bug fix #1 should go here, and it's at most 3 lines of JS code
 
-	if (!this.querySelector('.puzzle-image')) {
-		this.appendChild(draggedPiece);
-	}
-
-	else {console.log('There is already a puzzle piece in this drop zone.');
-	}
+   // Check if the drop zone is already occupied
+   if (this.children.length === 0) {
+	// If not occupied, move the dragged piece into the drop zone
+	this.appendChild(draggedPiece);
+}
 
 	// this line is going to move the dragged piece from the left side of the board
 	// into whatever drop zone we choose. appendChild means "add element to the container"
