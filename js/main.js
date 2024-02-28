@@ -44,11 +44,19 @@ function handleDragOver(e) {
 function handleDrop(e) { 
 	e.preventDefault();
 	console.log('dropped something on me');
+
+	if (!this.querySelector('.puzzle-image')) {
+		this.appendChild(draggedPiece);
+	}
+
+	else {
+        console.log('There is already a puzzle piece in this drop zone.');
+	}
+
 	// bug fix #1 should go here, and it's at most 3 lines of JS code
 
 	// this line is going to move the dragged piece from the left side of the board
 	// into whatever drop zone we choose. appendChild means "add element to the container"
-	this.appendChild(draggedPiece);
 }
 // step 2
 // event handling always goes at the bottom => 
